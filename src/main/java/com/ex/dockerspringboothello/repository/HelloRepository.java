@@ -1,5 +1,6 @@
 package com.ex.dockerspringboothello.repository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -12,6 +13,7 @@ public class HelloRepository {
 	private List<Hello> repository;
 	
 	{
+		repository = new ArrayList<Hello>();
 		repository.add(new Hello("0", "hello"));
 		repository.add(new Hello("1", "world"));
 		repository.add(new Hello("2", "docker"));
